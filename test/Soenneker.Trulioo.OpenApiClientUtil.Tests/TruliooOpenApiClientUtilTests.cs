@@ -1,20 +1,19 @@
 using Soenneker.Trulioo.OpenApiClientUtil.Abstract;
-using Soenneker.Tests.FixturedUnit;
-using Xunit;
+using Soenneker.Tests.HostedUnit;
 
 namespace Soenneker.Trulioo.OpenApiClientUtil.Tests;
 
-[Collection("Collection")]
-public sealed class TruliooOpenApiClientUtilTests : FixturedUnitTest
+[ClassDataSource<Host>(Shared = SharedType.PerTestSession)]
+public sealed class TruliooOpenApiClientUtilTests : HostedUnitTest
 {
     private readonly ITruliooOpenApiClientUtil _openapiclientutil;
 
-    public TruliooOpenApiClientUtilTests(Fixture fixture, ITestOutputHelper output) : base(fixture, output)
+    public TruliooOpenApiClientUtilTests(Host host) : base(host)
     {
         _openapiclientutil = Resolve<ITruliooOpenApiClientUtil>(true);
     }
 
-    [Fact]
+    [Test]
     public void Default()
     {
 
