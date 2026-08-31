@@ -6,7 +6,7 @@ using Soenneker.Trulioo.OpenApiClientUtil.Abstract;
 namespace Soenneker.Trulioo.OpenApiClientUtil.Registrars;
 
 /// <summary>
-/// Registers the OpenAPI client utility for dependency injection.
+/// Registers cached access to the Trulioo Customer API client.
 /// </summary>
 public static class TruliooOpenApiClientUtilRegistrar
 {

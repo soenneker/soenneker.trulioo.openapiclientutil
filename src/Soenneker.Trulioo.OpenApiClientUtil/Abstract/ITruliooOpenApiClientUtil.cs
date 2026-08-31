@@ -8,10 +8,10 @@ namespace Soenneker.Trulioo.OpenApiClientUtil.Abstract;
 /// <summary>
 /// Exposes a cached OpenAPI client instance.
 /// </summary>
-public interface ITruliooOpenApiClientUtil: IDisposable, IAsyncDisposable
+public interface ITruliooOpenApiClientUtil : IDisposable, IAsyncDisposable
 {
     /// <summary>
-    /// Gets the value.
+    /// Gets the cached Trulioo Customer API client.
     /// </summary>
     /// <param name="cancellationToken">The cancellation token.</param>
     /// <returns>A task containing the result of the operation.</returns>
