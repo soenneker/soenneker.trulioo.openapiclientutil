@@ -11,6 +11,7 @@ using Soenneker.Utils.AsyncSingleton;
 
 namespace Soenneker.Trulioo.OpenApiClientUtil;
 
+/// <inheritdoc cref="ITruliooOpenApiClientUtil" />
 public sealed class TruliooOpenApiClientUtil : ITruliooOpenApiClientUtil
 {
     private readonly AsyncSingleton<TruliooOpenApiClient> _client;
