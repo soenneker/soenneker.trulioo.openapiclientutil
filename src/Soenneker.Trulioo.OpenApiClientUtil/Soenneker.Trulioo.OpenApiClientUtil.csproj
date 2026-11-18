@@ -44,7 +44,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Soenneker.Trulioo.HttpClients" Version="11.0.169" />
+        <PackageReference Include="Soenneker.Trulioo.HttpClients" Version="11.0.172" />
         <PackageReference Include="Soenneker.Trulioo.OpenApiClient" Version="11.0.61" />
     </ItemGroup>
 </Project>
